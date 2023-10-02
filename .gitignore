@@ -2,3 +2,4 @@
 .DS_Store
 *.csv
 data/processed_reviews.pkl
+*.pyc
