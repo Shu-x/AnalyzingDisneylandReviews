@@ -13,7 +13,7 @@ import contractions
 from num2words import num2words
 # from nltk.corpus import PlaintextCorpusReader, stopwords
 # from nltk.stem import WordNetLemmatizer, PorterStemmer
-# from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.tokenize import word_tokenize, sent_tokenize
 import re
 
 
@@ -23,7 +23,8 @@ def text_preprocessing(text, stemmer = None, lemmatizer = None, stopword_list = 
     output = contractions.fix(text)
 
     # Split into words
-    output = output.split()
+    output = word_tokenize(output)
+    # output = output.split()
     for i in range(len(output)):
 
         # Convert to number
