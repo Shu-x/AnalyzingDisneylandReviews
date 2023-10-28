@@ -1,5 +1,10 @@
 
 .DS_Store
 *.csv
-data/processed_reviews.pkl
+data
+dashboard
 *.pyc
+notebooks/integrated_datasets
+notebooks/old
+notebooks/checkpoints
+notebooks/checkpoints.json
